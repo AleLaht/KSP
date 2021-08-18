@@ -11,7 +11,7 @@ function valinta(a) {
     // Arpoo tietokoneen valinnan
     const ksp = ["Kivi", "Sakset", "Paperi"];
     const random = Math.floor(Math.random() * ksp.length);
-    console.log(random, ksp[random]);
+    // console.log(random, ksp[random]);
 
     switch(a) {
         case kivi:

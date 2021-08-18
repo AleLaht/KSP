@@ -1,23 +1,44 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <title>KSP</title>
-    </head>
-    <body>
-        <table>
-            <tr><td colspan="3" >Valintasi <span id="valintasi"></span> Vastustajan valinta <span id="vastustajanvalinta"></span></td></tr>
-            <tr>
-                <td><div id="omatpisteet">0</div></td>
-                <td> - </td>
-                <td id="vastustajanpisteet">0</td>
-            </tr>
-        </table>
-        <div id="tulos">-</div>
-        <button id="kivi" onclick="valinta(kivi)">Kivi</button>
-        <button id="sakset" onclick="valinta(sakset)">Sakset</button>
-        <button id="paperi" onclick="valinta(paperi)">Paperi</button>
-        <script src="js/main.js"></script>
 
-    </body>
+<head>
+    <meta charset="utf-8" />
+    <title>KSP</title>
+    <link rel="stylesheet" href="css/style.css"></link>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row justify-content-md-center align-middle">
+            <div class="col-md-auto align-self-center">
+                Valintasi <span id="valintasi"></span> Vastustajan valinta <span id="vastustajanvalinta"></span>
+            </div>
+        </div>
+        <div class="row justify-content-md-center">
+            <div class="col-md-auto">
+                <span id="omatpisteet">0</span> - <span id="vastustajanpisteet">0</span>
+            </div>
+        </div>
+
+        <div class="row justify-content-md-center">
+            <div class="col-md-auto">
+                <div id="tulos">-</div>
+            </div>
+        </div>
+
+        <div class="row justify-content-md-center">
+            <div class="col-md-auto">
+                <button class="btn-lg" id="kivi" onclick="valinta(kivi)">Kivi</button>
+                <button class="btn-lg" id="sakset" onclick="valinta(sakset)">Sakset</button>
+                <button class="btn-lg" id="paperi" onclick="valinta(paperi)">Paperi</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+
+</body>
+
 </html>
