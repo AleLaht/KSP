@@ -1,1 +1,1 @@
-Kivisaksetpaperi peli
+Kivi Sakset Paperi
